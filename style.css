@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: roboto;
+    font-size: 10px;
+}
+
+/* <main> starts  */
+main {
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(220, 20, 60); */
+}
+
+/* .nav_1 starts  */
+main .nav_1 {
+    border: 1px solid black;
+    width: 100%;
+    height: fit-content;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rgb(238, 237, 237); */
+    padding-inline: 5rem;
+}
+
+.nav_1 .logo_cont {
+    display: flex;
+}
+
+.logo_cont .logo {
+    width: 2rem;
+    height: 2rem;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.nav_1 .links_cont {
+    display: flex;
+    gap: 4.5rem;
+}
+
+.links_cont h4 {
+    font-size: clamp(1.5rem, 2vw, 1.5rem);
+    font-weight: 500;
+}
+
+.links_cont h4 span {
+    margin-left: .5rem;
+    color: #9B9B9B;
+}
+
+/* .nav_1 ends  */
+
+/* .nav_2 starts  */
+main .nav_2 {
+    border: 1px solid black;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    padding-inline: 5rem;
+
+}
+
+.nav_2 h4 {
+    color: #000000;
+    font-size: clamp(1.5rem, 2vw, 1.5rem);
+    font-weight: 500;
+
+}
+
+/* .nav_2 ends  */
+
+/* section starts  */
+main section {
+    height: calc(100% - 12rem);
+    width: 100%;
+    /* background-color: rgb(235, 225, 227); */
+}
+
+/* <header> starts  */
+section header {
+    width: 100%;
+    height: 45%;
+    /* border: 1px solid black; */
+    /* background-color: rosybrown; */
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+section header::-webkit-scrollbar {
+    background-color: transparent;
+    height: .6rem;
+}
+
+section header::-webkit-scrollbar-thumb {
+    background-color: #EC653A;
+}
+
+section header .elem {
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    width: 55%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20rem;
+}
+
+section header .elem h1 {
+    font-size: 12rem;
+    font-weight: 300;
+}
+
+/* <header> ends  */
+
+/* <footer> starts  */
+main section footer {
+    width: 100%;
+    height: 55%;
+    /* background-color: crimson; */
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+
+}
+
+main section footer::-webkit-scrollbar {
+    display: none;
+}
+
+main section footer img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+}
+
+main section footer #img_1 {
+    object-position: center;
+}
+
+/* <footer> ends  */
+/* section ends  */
+/* <main> ends  */
